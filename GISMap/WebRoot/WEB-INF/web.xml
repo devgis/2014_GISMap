@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<!--mapxtreme地图服务器的servlet的配置-->
+	 <servlet>
+		<servlet-name>mapxtreme</servlet-name>
+		<servlet-class>com.mapinfo.mapxtreme.MapXtremeServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<!-- internal servlets which are called by MapXtremeServlet -->
+	<!-- these servlets should not be called directly!          -->
+	<servlet>
+		<servlet-name>mxtj_image</servlet-name>
+		<servlet-class>com.mapinfo.mapxtreme.ImageHandlerServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>mxtj_metadata</servlet-name>
+		<servlet-class>com.mapinfo.mapxtreme.MetadataHandlerServlet</servlet-class>
+		<load-on-startup>3</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>mxtj_vector</servlet-name>
+		<servlet-class>com.mapinfo.mapxtreme.VectorHandlerServlet</servlet-class>
+		<load-on-startup>4</load-on-startup>
+	</servlet>
+
+	<!-- servlet URL mappings -->
+	<!-- mapxtreme -->
+	<servlet-mapping>
+		<servlet-name>mapxtreme</servlet-name>
+		<url-pattern>/servlet/mapxtreme</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>mapxtreme</servlet-name>
+		<url-pattern>/mapxtreme</url-pattern>
+	</servlet-mapping>
+	
+  <servlet>
+    <description>MapServlet</description>
+    <display-name>MapServlet</display-name>
+    <servlet-name>MapServlet</servlet-name>
+    <servlet-class>net.gis.map.MapServlet</servlet-class>
+	
+   <init-param>
+    	<!--地图存放路径配置-->
+		<param-name>mapPath</param-name>
+		<param-value>map</param-value>
+	</init-param>
+	<init-param>
+		<!--地图集合文件完整路径，需要和地图存放路径保持同步-->
+		<param-name>fileToLoad</param-name>
+		<param-value>map/map.mdf</param-value>
+	</init-param>
+	<init-param>
+		<!-- 地图服务器的引用路径配置 -->
+		<param-name>mapxtremeURL</param-name>
+		<param-value>http://localhost:8080/GisMap/mapxtreme</param-value>
+	</init-param>
+	
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>MapServlet</servlet-name>
+    <url-pattern>/servlet/MapServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>map.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

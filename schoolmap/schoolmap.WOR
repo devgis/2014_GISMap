@@ -1,0 +1,284 @@
+!Workspace
+!Version 600
+!Charset WindowsSimpChinese
+Open Table "F:\map\fujian\basketball" As basketball Interactive
+Open Table "F:\map\fujian\bj" As bj Interactive
+Open Table "F:\map\fujian\bus" As bus Interactive
+Open Table "F:\map\fujian\cd" As cd Interactive
+Open Table "F:\map\fujian\hdtyzx" As hdtyzx Interactive
+Open Table "F:\map\fujian\hskt" As hskt Interactive
+Open Table "F:\map\fujian\hu" As hu Interactive
+Open Table "F:\map\fujian\jsss" As jsss Interactive
+Open Table "F:\map\fujian\jx" As jx Interactive
+Open Table "F:\map\fujian\jxl" As jxl Interactive
+Open Table "F:\map\fujian\jxlcd" As jxlcd Interactive
+Open Table "F:\map\fujian\point" As point Interactive
+Open Table "F:\map\fujian\sl" As sl Interactive
+Open Table "F:\map\fujian\ss" As ss Interactive
+Open Table "F:\map\fujian\st" As st Interactive
+Open Table "F:\map\fujian\tsg" As tsg Interactive
+Open Table "F:\map\fujian\wqc" As wqc Interactive
+Open Table "F:\map\fujian\zqc" As zqc Interactive
+Open Table "wz" As wz Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\map_auto.TAB" As map_auto Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\饭堂" As 饭堂 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\湖" As 湖 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\教师宿舍" As 教师宿舍 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\教师住宅1" As 教师住宅1 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\教师住宅2" As 教师住宅2 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\教学楼" As 教学楼 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\篮球场" As 篮球场 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\其他" As 其他 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\区域绿化区" As 区域绿化区 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\区域内部建筑1" As 区域内部建筑1 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\区域内部建筑" As 区域内部建筑 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\体育设施" As 体育设施 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\图书馆1" As 图书馆1 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\图书馆" As 图书馆 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\文字" As 文字 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\学生宿舍1" As 学生宿舍1 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\学生宿舍2" As 学生宿舍2 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\学生宿舍3" As 学生宿舍3 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\学生宿舍" As 学生宿舍 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\运动场1" As 运动场1 Interactive
+Open Table "C:\Documents and Settings\Administrator\桌面\abc\1\地图1\足球场1" As 足球场1 Interactive
+Open Table "hdtyzx" As hdtyzx_2 Interactive
+Open Table "schoolmap\basketball" As basketball_2 Interactive
+Open Table "schoolmap\bj" As bj_2 Interactive
+Open Table "schoolmap\bus" As bus_2 Interactive
+Open Table "schoolmap\cd" As cd_2 Interactive
+Open Table "schoolmap\hdtyzx" As hdtyzx_3 Interactive
+Open Table "schoolmap\hskt" As hskt_2 Interactive
+Open Table "schoolmap\hu" As hu_2 Interactive
+Open Table "schoolmap\jsss" As jsss_2 Interactive
+Open Table "schoolmap\jx" As jx_2 Interactive
+Open Table "schoolmap\jxl" As jxl_2 Interactive
+Open Table "schoolmap\jxlcd" As jxlcd_2 Interactive
+Open Table "schoolmap\point" As point_2 Interactive
+Open Table "schoolmap\sl" As sl_2 Interactive
+Open Table "schoolmap\ss" As ss_2 Interactive
+Open Table "schoolmap\st" As st_2 Interactive
+Open Table "schoolmap\tsg" As tsg_2 Interactive
+Open Table "schoolmap\wqc" As wqc_2 Interactive
+Open Table "schoolmap\zqc" As zqc_2 Interactive
+Open Table "wkjxl" As wkjxl Interactive
+Open Table "bg" As bg Interactive
+Open Table "road" As road Interactive
+Map From point,wz,road,basketball,ss,wkjxl,
+  bj,bus,hdtyzx,hskt,hu,jsss,
+  jx,jxl,jxlcd,st,tsg,wqc,
+  zqc,cd,sl,bg 
+  Position (-0.135417,0.114583) Units "in"
+  Width 8.53125 Units "in" Height 6.52083 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On
+Set Map
+  CoordSys NonEarth Units "ft"
+  Center (840.2528966,-1143.178145)
+  Zoom 1861.357376 Units "ft"
+  Preserve Zoom Display Zoom
+  Distance Units "ft" Area Units "sq ft" XY Units "ft"
+  Distance Type Cartesian
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line Arrow Position Right Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With ty
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line Arrow Position Right Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With wz
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 3
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line Arrow Position Right Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With road
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 4
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line Arrow Position Above Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With lqc
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 5
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With ss
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 6
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With wkjxl
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 7
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With bj
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 8
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With bus
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 9
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With hdty
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 10
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With hskt
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 11
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With hu
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 12
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With jsss
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 13
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With jx
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 14
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With jxl
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 15
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With jxl_caodi
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 16
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With st
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 17
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With tsg
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 18
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line Arrow Position Above Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With wqc
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 19
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With zqc
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 20
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line None Position Center Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With cd
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 21
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line Arrow Position Above Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With sl
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 22
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line Arrow Position Right Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With bg
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+Set Map Layer 22 Editable
+Set CoordSys NonEarth Units "ft" Bounds (0, -3289) (2424, 1)
+Dim TempClipObject As Object
+Create Region Into Variable TempClipObject  1
+  5
+(273.41572,-2490.70819)
+(273.41572,-190.842106)
+(1767.475152,-190.842106)
+(1767.475152,-2490.70819)
+(273.41572,-2490.70819)
+    Pen (1,2,0) 
+    Brush (2,15597520,16777215)
+    Center (1020.445436,-1340.775148)
+Set Map Clipping Object TempClipObject
+UnDim TempClipObject
+Set Window FrontWindow() Printer
+ Name "Microsoft Office Document Image Writer" Orientation Portrait Copies 1
+ Papersize 9
+Dim WorkspaceMaximizedWindow As Integer
+WorkspaceMaximizedWindow = Frontwindow()
+Map From 文字,map_auto 
+  Position (7.70833,0.510417) Units "in"
+  Width 4.91667 Units "in" Height 4.125 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On
+Set Map
+  CoordSys NonEarth Units "ft"
+  Center (577.6293701,-651.1156027)
+  Zoom 655.8630472 Units "ft"
+  Preserve Zoom Display Zoom
+  Distance Units "ft" Area Units "sq ft" XY Units "ft"
+  Distance Type Cartesian
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Label Line Arrow Position Right Font ("Tahoma",0,12,0) Pen (1,2,0) 
+      With 文字
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,12,0)
+    Selectable Off
+    Zoom (25, 10000) Units "ft" 
+Set Window FrontWindow() Printer
+ Name "Microsoft Office Document Image Writer" Orientation Portrait Copies 1
+ Papersize 9
+Set Window WorkspaceMaximizedWindow Max
+Undim WorkspaceMaximizedWindow

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="GisMap"
+  id="myeclipse.1283333012718"
+  context-root="/GisMap"
+  j2ee-spec="5.0"
+  archive="GisMap.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

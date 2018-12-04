@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MapDefinition MI_XMLProtocolVersion="MI_XML_Protocol_MapPersistence_4_7_1">
+  <MapBounds>
+    <Box srsName="mapinfo:0,3">
+      <coord>
+        <X>-825.905957379636</X>
+        <Y>-1325.3121468034735</Y>
+      </coord>
+      <coord>
+        <X>3550.0940426203642</X>
+        <Y>-1325.3121468034735</Y>
+      </coord>
+    </Box>
+  </MapBounds>
+  <MapUnits>
+    <LinearUnit>
+      <Identifier>
+        <code>9002</code>
+        <codeSpace>epsg</codeSpace>
+      </Identifier>
+    </LinearUnit>
+  </MapUnits>
+  <NumericCoordSys>
+    <CoordinateReferenceSystem>
+      <Identifier>
+        <code>4326</code>
+        <codeSpace>epsg</codeSpace>
+      </Identifier>
+    </CoordinateReferenceSystem>
+  </NumericCoordSys>
+  <DisplayCoordSys>
+    <CoordinateReferenceSystem>
+      <Identifier>
+        <code>0,3</code>
+        <codeSpace>mapinfo</codeSpace>
+      </Identifier>
+    </CoordinateReferenceSystem>
+  </DisplayCoordSys>
+  <MapDefinitionLayerList>
+    <MapDefinitionLayer Level="1" Name="boundary">
+      <LayerConditions>
+        <IsSelectable>true</IsSelectable>
+      </LayerConditions>
+      <ServerQuery>
+        <Table>boundary.TAB</Table>
+      </ServerQuery>
+      <Connection>
+        <Url>tab:F:\schoolmap?remote=http://31f1a558db15476:8080/mapxtreme482/mapxtreme</Url>
+      </Connection>
+      <KeyColumns>
+        <AttName>MapInfo_ID</AttName>
+      </KeyColumns>
+      <FeatureStyle>
+        <BaseFeatureStyle Action="discover" />
+        <FeatureStyleColumn Action="none" />
+        <FeatureThemeList />
+      </FeatureStyle>
+      <TextLabels>
+        <VisibilityConstraints>
+          <IsEnabled>false</IsEnabled>
+        </VisibilityConstraints>
+        <BaseLabelProperties Action="use">
+          <LabelProperties>
+            <LabelTokenList>
+              <LabelToken>
+                <AttName>bj</AttName>
+              </LabelToken>
+            </LabelTokenList>
+            <LabelConstraints>
+              <Alignment>
+                <HorizontalAlignment>center</HorizontalAlignment>
+                <VerticalAlignment>center</VerticalAlignment>
+              </Alignment>
+              <Offset>
+                <PixelSpacingUnit>
+                  <pixelSpacingsPerUnit>1.0</pixelSpacingsPerUnit>
+                </PixelSpacingUnit>
+                <HorizontalOffset>0.0</HorizontalOffset>
+                <VerticalOffset>0.0</VerticalOffset>
+              </Offset>
+            </LabelConstraints>
+            <Style>
+              <rendition>
+                <style font-family="Tahoma" font-weight="1.0" font-size="12.0" font-style="normal" text-decoration="none" symbol-foreground="black" />
+              </rendition>
+            </Style>
+          </LabelProperties>
+        </BaseLabelProperties>
+        <LabelStyleColumn Action="discover" />
+        <LabelThemeList />
+      </TextLabels>
+    </MapDefinitionLayer>
+    <MapDefinitionLayer Level="2" Name="point">
+      <LayerConditions>
+        <IsSelectable>true</IsSelectable>
+      </LayerConditions>
+      <ServerQuery>
+        <Table>point.TAB</Table>
+      </ServerQuery>
+      <Connection>
+        <Url>tab:F:\schoolmap?remote=http://31f1a558db15476:8080/mapxtreme482/mapxtreme</Url>
+      </Connection>
+      <KeyColumns>
+        <AttName>MapInfo_ID</AttName>
+      </KeyColumns>
+      <FeatureStyle>
+        <BaseFeatureStyle Action="discover" />
+        <FeatureStyleColumn Action="none" />
+        <FeatureThemeList />
+      </FeatureStyle>
+      <TextLabels>
+        <VisibilityConstraints>
+          <IsEnabled>false</IsEnabled>
+        </VisibilityConstraints>
+        <BaseLabelProperties Action="use">
+          <LabelProperties>
+            <LabelTokenList>
+              <LabelToken>
+                <AttName>ty</AttName>
+              </LabelToken>
+            </LabelTokenList>
+            <LabelConstraints>
+              <Alignment>
+                <HorizontalAlignment>left</HorizontalAlignment>
+                <VerticalAlignment>center</VerticalAlignment>
+              </Alignment>
+              <Offset>
+                <PixelSpacingUnit>
+                  <pixelSpacingsPerUnit>1.0</pixelSpacingsPerUnit>
+                </PixelSpacingUnit>
+                <HorizontalOffset>2.0</HorizontalOffset>
+                <VerticalOffset>0.0</VerticalOffset>
+              </Offset>
+            </LabelConstraints>
+            <Style>
+              <rendition>
+                <style font-family="Tahoma" font-weight="1.0" font-size="12.0" font-style="normal" text-decoration="none" symbol-foreground="black" />
+              </rendition>
+            </Style>
+          </LabelProperties>
+        </BaseLabelProperties>
+        <LabelStyleColumn Action="discover" />
+        <LabelThemeList />
+      </TextLabels>
+    </MapDefinitionLayer>
+    <MapDefinitionLayer Level="3" Name="words">
+      <LayerConditions>
+        <IsSelectable>true</IsSelectable>
+      </LayerConditions>
+      <ServerQuery>
+        <Table>words.TAB</Table>
+      </ServerQuery>
+      <Connection>
+        <Url>tab:F:\schoolmap?remote=http://31f1a558db15476:8080/mapxtreme482/mapxtreme</Url>
+      </Connection>
+      <KeyColumns>
+        <AttName>MapInfo_ID</AttName>
+      </KeyColumns>
+      <FeatureStyle>
+        <BaseFeatureStyle Action="discover" />
+        <FeatureStyleColumn Action="none" />
+        <FeatureThemeList />
+      </FeatureStyle>
+      <TextLabels>
+        <VisibilityConstraints>
+          <IsEnabled>false</IsEnabled>
+        </VisibilityConstraints>
+        <BaseLabelProperties Action="use">
+          <LabelProperties>
+            <LabelTokenList>
+              <LabelToken>
+                <AttName>wz</AttName>
+              </LabelToken>
+            </LabelTokenList>
+            <LabelConstraints>
+              <Alignment>
+                <HorizontalAlignment>left</HorizontalAlignment>
+                <VerticalAlignment>center</VerticalAlignment>
+              </Alignment>
+              <Offset>
+                <PixelSpacingUnit>
+                  <pixelSpacingsPerUnit>1.0</pixelSpacingsPerUnit>
+                </PixelSpacingUnit>
+                <HorizontalOffset>2.0</HorizontalOffset>
+                <VerticalOffset>0.0</VerticalOffset>
+              </Offset>
+            </LabelConstraints>
+            <Style>
+              <rendition>
+                <style font-family="Tahoma" font-weight="1.0" font-size="12.0" font-style="normal" text-decoration="none" symbol-foreground="black" />
+              </rendition>
+            </Style>
+          </LabelProperties>
+        </BaseLabelProperties>
+        <LabelStyleColumn Action="discover" />
+        <LabelThemeList />
+      </TextLabels>
+    </MapDefinitionLayer>
+    <MapDefinitionLayer Level="4" Name="road">
+      <LayerConditions>
+        <IsSelectable>true</IsSelectable>
+      </LayerConditions>
+      <ServerQuery>
+        <Table>road.TAB</Table>
+      </ServerQuery>
+      <Connection>
+        <Url>tab:F:\schoolmap?remote=http://31f1a558db15476:8080/mapxtreme482/mapxtreme</Url>
+      </Connection>
+      <KeyColumns>
+        <AttName>MapInfo_ID</AttName>
+      </KeyColumns>
+      <FeatureStyle>
+        <BaseFeatureStyle Action="discover" />
+        <FeatureStyleColumn Action="none" />
+        <FeatureThemeList />
+      </FeatureStyle>
+      <TextLabels>
+        <VisibilityConstraints>
+          <IsEnabled>false</IsEnabled>
+        </VisibilityConstraints>
+        <BaseLabelProperties Action="use">
+          <LabelProperties>
+            <LabelTokenList>
+              <LabelToken>
+                <AttName>road</AttName>
+              </LabelToken>
+            </LabelTokenList>
+            <LabelConstraints>
+              <AllowDuplication>false</AllowDuplication>
+              <Alignment>
+                <HorizontalAlignment>center</HorizontalAlignment>
+                <VerticalAlignment>bottom</VerticalAlignment>
+              </Alignment>
+              <Offset>
+                <PixelSpacingUnit>
+                  <pixelSpacingsPerUnit>1.0</pixelSpacingsPerUnit>
+                </PixelSpacingUnit>
+                <HorizontalOffset>0.0</HorizontalOffset>
+                <VerticalOffset>-2.0</VerticalOffset>
+              </Offset>
+            </LabelConstraints>
+            <Style>
+              <rendition>
+                <style font-family="Tahoma" font-weight="1.0" font-size="12.0" font-style="normal" text-decoration="none" symbol-foreground="black" />
+              </rendition>
+            </Style>
+          </LabelProperties>
+        </BaseLabelProperties>
+        <LabelStyleColumn Action="discover" />
+        <LabelThemeList />
+      </TextLabels>
+    </MapDefinitionLayer>
+    <MapDefinitionLayer Level="5" Name="activity">
+      <LayerConditions>
+        <IsSelectable>true</IsSelectable>
+      </LayerConditions>
+      <ServerQuery>
+        <Table>activity.TAB</Table>
+      </ServerQuery>
+      <Connection>
+        <Url>tab:F:\schoolmap?remote=http://31f1a558db15476:8080/mapxtreme482/mapxtreme</Url>
+      </Connection>
+      <KeyColumns>
+        <AttName>MapInfo_ID</AttName>
+      </KeyColumns>
+      <FeatureStyle>
+        <BaseFeatureStyle Action="discover" />
+        <FeatureStyleColumn Action="none" />
+        <FeatureThemeList />
+      </FeatureStyle>
+      <TextLabels>
+        <VisibilityConstraints>
+          <IsEnabled>false</IsEnabled>
+        </VisibilityConstraints>
+        <BaseLabelProperties Action="use">
+          <LabelProperties>
+            <LabelTokenList>
+              <LabelToken>
+                <AttName>lqc</AttName>
+              </LabelToken>
+            </LabelTokenList>
+            <LabelConstraints>
+              <AllowDuplication>false</AllowDuplication>
+              <Alignment>
+                <HorizontalAlignment>center</HorizontalAlignment>
+                <VerticalAlignment>bottom</VerticalAlignment>
+              </Alignment>
+              <Offset>
+                <PixelSpacingUnit>
+                  <pixelSpacingsPerUnit>1.0</pixelSpacingsPerUnit>
+                </PixelSpacingUnit>
+                <HorizontalOffset>0.0</HorizontalOffset>
+                <VerticalOffset>-2.0</VerticalOffset>
+              </Offset>
+            </LabelConstraints>
+            <Style>
+              <rendition>
+                <style font-family="Tahoma" font-weight="1.0" font-size="12.0" font-style="normal" text-decoration="none" symbol-foreground="black" />
+              </rendition>
+            </Style>
+          </LabelProperties>
+        </BaseLabelProperties>
+        <LabelStyleColumn Action="discover" />
+        <LabelThemeList />
+      </TextLabels>
+    </MapDefinitionLayer>
+    <MapDefinitionLayer Level="6" Name="study">
+      <LayerConditions>
+        <IsSelectable>true</IsSelectable>
+      </LayerConditions>
+      <ServerQuery>
+        <Table>study.TAB</Table>
+      </ServerQuery>
+      <Connection>
+        <Url>tab:F:\schoolmap?remote=http://31f1a558db15476:8080/mapxtreme482/mapxtreme</Url>
+      </Connection>
+      <KeyColumns>
+        <AttName>MapInfo_ID</AttName>
+      </KeyColumns>
+      <FeatureStyle>
+        <BaseFeatureStyle Action="discover" />
+        <FeatureStyleColumn Action="none" />
+        <FeatureThemeList />
+      </FeatureStyle>
+      <TextLabels>
+        <VisibilityConstraints>
+          <IsEnabled>false</IsEnabled>
+        </VisibilityConstraints>
+        <BaseLabelProperties Action="use">
+          <LabelProperties>
+            <LabelTokenList>
+              <LabelToken>
+                <AttName>jxl</AttName>
+              </LabelToken>
+            </LabelTokenList>
+            <LabelConstraints>
+              <Alignment>
+                <HorizontalAlignment>center</HorizontalAlignment>
+                <VerticalAlignment>center</VerticalAlignment>
+              </Alignment>
+              <Offset>
+                <PixelSpacingUnit>
+                  <pixelSpacingsPerUnit>1.0</pixelSpacingsPerUnit>
+                </PixelSpacingUnit>
+                <HorizontalOffset>0.0</HorizontalOffset>
+                <VerticalOffset>0.0</VerticalOffset>
+              </Offset>
+            </LabelConstraints>
+            <Style>
+              <rendition>
+                <style font-family="Tahoma" font-weight="1.0" font-size="12.0" font-style="normal" text-decoration="none" symbol-foreground="black" />
+              </rendition>
+            </Style>
+          </LabelProperties>
+        </BaseLabelProperties>
+        <LabelStyleColumn Action="discover" />
+        <LabelThemeList />
+      </TextLabels>
+    </MapDefinitionLayer>
+    <MapDefinitionLayer Level="7" Name="lack">
+      <LayerConditions>
+        <IsSelectable>true</IsSelectable>
+      </LayerConditions>
+      <ServerQuery>
+        <Table>lack.TAB</Table>
+      </ServerQuery>
+      <Connection>
+        <Url>tab:F:\schoolmap?remote=http://31f1a558db15476:8080/mapxtreme482/mapxtreme</Url>
+      </Connection>
+      <KeyColumns>
+        <AttName>MapInfo_ID</AttName>
+      </KeyColumns>
+      <FeatureStyle>
+        <BaseFeatureStyle Action="discover" />
+        <FeatureStyleColumn Action="none" />
+        <FeatureThemeList />
+      </FeatureStyle>
+      <TextLabels>
+        <VisibilityConstraints>
+          <IsEnabled>false</IsEnabled>
+        </VisibilityConstraints>
+        <BaseLabelProperties Action="use">
+          <LabelProperties>
+            <LabelTokenList>
+              <LabelToken>
+                <AttName>hu</AttName>
+              </LabelToken>
+            </LabelTokenList>
+            <LabelConstraints>
+              <Alignment>
+                <HorizontalAlignment>center</HorizontalAlignment>
+                <VerticalAlignment>center</VerticalAlignment>
+              </Alignment>
+              <Offset>
+                <PixelSpacingUnit>
+                  <pixelSpacingsPerUnit>1.0</pixelSpacingsPerUnit>
+                </PixelSpacingUnit>
+                <HorizontalOffset>0.0</HorizontalOffset>
+                <VerticalOffset>0.0</VerticalOffset>
+              </Offset>
+            </LabelConstraints>
+            <Style>
+              <rendition>
+                <style font-family="Tahoma" font-weight="1.0" font-size="12.0" font-style="normal" text-decoration="none" symbol-foreground="black" />
+              </rendition>
+            </Style>
+          </LabelProperties>
+        </BaseLabelProperties>
+        <LabelStyleColumn Action="discover" />
+        <LabelThemeList />
+      </TextLabels>
+    </MapDefinitionLayer>
+    <MapDefinitionLayer Level="8" Name="Dormitory">
+      <LayerConditions>
+        <IsSelectable>true</IsSelectable>
+      </LayerConditions>
+      <ServerQuery>
+        <Table>Dormitory.TAB</Table>
+      </ServerQuery>
+      <Connection>
+        <Url>tab:F:\schoolmap?remote=http://31f1a558db15476:8080/mapxtreme482/mapxtreme</Url>
+      </Connection>
+      <KeyColumns>
+        <AttName>MapInfo_ID</AttName>
+      </KeyColumns>
+      <FeatureStyle>
+        <BaseFeatureStyle Action="discover" />
+        <FeatureStyleColumn Action="none" />
+        <FeatureThemeList />
+      </FeatureStyle>
+      <TextLabels>
+        <VisibilityConstraints>
+          <IsEnabled>false</IsEnabled>
+        </VisibilityConstraints>
+        <BaseLabelProperties Action="use">
+          <LabelProperties>
+            <LabelTokenList>
+              <LabelToken>
+                <AttName>ss</AttName>
+              </LabelToken>
+            </LabelTokenList>
+            <LabelConstraints>
+              <Alignment>
+                <HorizontalAlignment>center</HorizontalAlignment>
+                <VerticalAlignment>center</VerticalAlignment>
+              </Alignment>
+              <Offset>
+                <PixelSpacingUnit>
+                  <pixelSpacingsPerUnit>1.0</pixelSpacingsPerUnit>
+                </PixelSpacingUnit>
+                <HorizontalOffset>0.0</HorizontalOffset>
+                <VerticalOffset>0.0</VerticalOffset>
+              </Offset>
+            </LabelConstraints>
+            <Style>
+              <rendition>
+                <style font-family="Tahoma" font-weight="1.0" font-size="12.0" font-style="normal" text-decoration="none" symbol-foreground="black" />
+              </rendition>
+            </Style>
+          </LabelProperties>
+        </BaseLabelProperties>
+        <LabelStyleColumn Action="discover" />
+        <LabelThemeList />
+      </TextLabels>
+    </MapDefinitionLayer>
+    <MapDefinitionLayer Level="9" Name="canteen">
+      <LayerConditions>
+        <IsSelectable>true</IsSelectable>
+      </LayerConditions>
+      <ServerQuery>
+        <Table>canteen.TAB</Table>
+      </ServerQuery>
+      <Connection>
+        <Url>tab:F:\schoolmap?remote=http://31f1a558db15476:8080/mapxtreme482/mapxtreme</Url>
+      </Connection>
+      <KeyColumns>
+        <AttName>MapInfo_ID</AttName>
+      </KeyColumns>
+      <FeatureStyle>
+        <BaseFeatureStyle Action="discover" />
+        <FeatureStyleColumn Action="none" />
+        <FeatureThemeList />
+      </FeatureStyle>
+      <TextLabels>
+        <VisibilityConstraints>
+          <IsEnabled>false</IsEnabled>
+        </VisibilityConstraints>
+        <BaseLabelProperties Action="use">
+          <LabelProperties>
+            <LabelTokenList>
+              <LabelToken>
+                <AttName>st</AttName>
+              </LabelToken>
+            </LabelTokenList>
+            <LabelConstraints>
+              <Alignment>
+                <HorizontalAlignment>center</HorizontalAlignment>
+                <VerticalAlignment>center</VerticalAlignment>
+              </Alignment>
+              <Offset>
+                <PixelSpacingUnit>
+                  <pixelSpacingsPerUnit>1.0</pixelSpacingsPerUnit>
+                </PixelSpacingUnit>
+                <HorizontalOffset>0.0</HorizontalOffset>
+                <VerticalOffset>0.0</VerticalOffset>
+              </Offset>
+            </LabelConstraints>
+            <Style>
+              <rendition>
+                <style font-family="Tahoma" font-weight="1.0" font-size="12.0" font-style="normal" text-decoration="none" symbol-foreground="black" />
+              </rendition>
+            </Style>
+          </LabelProperties>
+        </BaseLabelProperties>
+        <LabelStyleColumn Action="discover" />
+        <LabelThemeList />
+      </TextLabels>
+    </MapDefinitionLayer>
+    <MapDefinitionLayer Level="10" Name="bus and drive">
+      <LayerConditions>
+        <IsSelectable>true</IsSelectable>
+      </LayerConditions>
+      <ServerQuery>
+        <Table>bus and drive.TAB</Table>
+      </ServerQuery>
+      <Connection>
+        <Url>tab:F:\schoolmap?remote=http://31f1a558db15476:8080/mapxtreme482/mapxtreme</Url>
+      </Connection>
+      <KeyColumns>
+        <AttName>MapInfo_ID</AttName>
+      </KeyColumns>
+      <FeatureStyle>
+        <BaseFeatureStyle Action="discover" />
+        <FeatureStyleColumn Action="none" />
+        <FeatureThemeList />
+      </FeatureStyle>
+      <TextLabels>
+        <VisibilityConstraints>
+          <IsEnabled>false</IsEnabled>
+        </VisibilityConstraints>
+        <BaseLabelProperties Action="use">
+          <LabelProperties>
+            <LabelTokenList>
+              <LabelToken>
+                <AttName>jx</AttName>
+              </LabelToken>
+            </LabelTokenList>
+            <LabelConstraints>
+              <Alignment>
+                <HorizontalAlignment>center</HorizontalAlignment>
+                <VerticalAlignment>center</VerticalAlignment>
+              </Alignment>
+              <Offset>
+                <PixelSpacingUnit>
+                  <pixelSpacingsPerUnit>1.0</pixelSpacingsPerUnit>
+                </PixelSpacingUnit>
+                <HorizontalOffset>0.0</HorizontalOffset>
+                <VerticalOffset>0.0</VerticalOffset>
+              </Offset>
+            </LabelConstraints>
+            <Style>
+              <rendition>
+                <style font-family="Tahoma" font-weight="1.0" font-size="12.0" font-style="normal" text-decoration="none" symbol-foreground="black" />
+              </rendition>
+            </Style>
+          </LabelProperties>
+        </BaseLabelProperties>
+        <LabelStyleColumn Action="discover" />
+        <LabelThemeList />
+      </TextLabels>
+    </MapDefinitionLayer>
+    <MapDefinitionLayer Level="11" Name="background">
+      <LayerConditions>
+        <IsSelectable>true</IsSelectable>
+      </LayerConditions>
+      <ServerQuery>
+        <Table>background.TAB</Table>
+      </ServerQuery>
+      <Connection>
+        <Url>tab:F:\schoolmap?remote=http://31f1a558db15476:8080/mapxtreme482/mapxtreme</Url>
+      </Connection>
+      <KeyColumns>
+        <AttName>MapInfo_ID</AttName>
+      </KeyColumns>
+      <FeatureStyle>
+        <BaseFeatureStyle Action="discover" />
+        <FeatureStyleColumn Action="none" />
+        <FeatureThemeList />
+      </FeatureStyle>
+      <TextLabels>
+        <VisibilityConstraints>
+          <IsEnabled>false</IsEnabled>
+        </VisibilityConstraints>
+        <BaseLabelProperties Action="use">
+          <LabelProperties>
+            <LabelTokenList>
+              <LabelToken>
+                <AttName>bg</AttName>
+              </LabelToken>
+            </LabelTokenList>
+            <LabelConstraints>
+              <Alignment>
+                <HorizontalAlignment>center</HorizontalAlignment>
+                <VerticalAlignment>center</VerticalAlignment>
+              </Alignment>
+              <Offset>
+                <PixelSpacingUnit>
+                  <pixelSpacingsPerUnit>1.0</pixelSpacingsPerUnit>
+                </PixelSpacingUnit>
+                <HorizontalOffset>0.0</HorizontalOffset>
+                <VerticalOffset>0.0</VerticalOffset>
+              </Offset>
+            </LabelConstraints>
+            <Style>
+              <rendition>
+                <style font-family="Tahoma" font-weight="1.0" font-size="12.0" font-style="normal" text-decoration="none" symbol-foreground="black" />
+              </rendition>
+            </Style>
+          </LabelProperties>
+        </BaseLabelProperties>
+        <LabelStyleColumn Action="discover" />
+        <LabelThemeList />
+      </TextLabels>
+    </MapDefinitionLayer>
+  </MapDefinitionLayerList>
+</MapDefinition>
+
